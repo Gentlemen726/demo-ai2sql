@@ -1,0 +1,84 @@
+/* Set the font family and background color for the entire popup */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f9fafb;
+    width: 375PX;
+    height: 768PX;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style the input fields */
+  input {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #d2d7d9;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the 'Generate Query' button */
+  button {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #509ee3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  
+  /* Style the 'Generate Query' button on hover */
+  button:hover {
+    background-color: #4080c7;
+  }
+  
+  /* Style the SQL result textarea */
+  #sql-result {
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #d2d7d9;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    /* white-space: pre;*/
+    background-color: #ffffff;
+    display: flex;
+    min-height: 500px;
+    overflow: auto;
+    white-space: pre-wrap; /* Add this line */
+    word-wrap: break-word; /* Add this line */
+  }
+  
+  /* SQL syntax highlighting */
+  /* Keywords */
+  #sql-result .keyword {
+    color: #b34949;
+    font-weight: bold;
+  }
+  
+  /* Strings */
+  #sql-result .string {
+    color: #3f7d7d;
+  }
+  
+  /* Numbers */
+  #sql-result .number {
+    color: #ca7841;
+  }
+
+
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
